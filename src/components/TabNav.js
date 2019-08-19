@@ -51,11 +51,3 @@ export default function TabNav() {
       ),
       render; () => <Tab.Pane>TODO</Tab.Pane>
     }
-  ;
-    
-      
-      export default function TabNav() {
-        return (
-          <Tab panes={panes} />
-        )
-        };
