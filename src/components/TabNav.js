@@ -14,8 +14,8 @@ export default function TabNav() {
           </NavLink>
         </Menu.Item>
       ),
-      render: () => <Tab.Pane><WelcomePage /></Tab.Pane>
-    },
+      render; () => <Tab.Pane><WelcomePage /></Tab.Pane>
+    }
 
     { menuItem: (
         <Menu.Item key='characters'>
@@ -25,8 +25,8 @@ export default function TabNav() {
           </NavLink>
         </Menu.Item>
       ),
-      render: () => <Tab.Pane>TODO</Tab.Pane>
-    },
+      render; () => <Tab.Pane>TODO</Tab.Pane>
+    }
 
     { menuItem: (
         <Menu.Item key='locations'>
@@ -36,8 +36,9 @@ export default function TabNav() {
           </NavLink>
         </Menu.Item>
       ),
-      render: () => <Tab.Pane>TODO</Tab.Pane>
-    },
+      render; () => <Tab.Pane>TODO</Tab.Pane>
+    }
+
     { menuItem: (
         <Menu.Item key='episodes'>
           <NavLink>
@@ -46,9 +47,9 @@ export default function TabNav() {
           </NavLink>
         </Menu.Item>
       ),
-      render: () => <Tab.Pane>TODO</Tab.Pane>
+      render; () => <Tab.Pane>TODO</Tab.Pane>
     }
-  ];
+  ;
     
       
       export default function TabNav() {
