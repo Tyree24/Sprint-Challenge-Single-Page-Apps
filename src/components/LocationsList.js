@@ -3,7 +3,7 @@ import axios from "axios";
 import LocationCard from "./LocationCard.js";
 
 export default function LocationsList(props) {
-  const[(locationList, setLocationList)] = useState([]);
+  const [locationList, setLocationList] = useState([]);
 
   useEffect(() => {
     axios
@@ -15,11 +15,11 @@ export default function LocationsList(props) {
       .catch(err => {
         console.log(err);
       });
-  }, [props.match.params.path]);
+  }, [props.match.path]);
 
   return (
     <section className="location-list grid-view">
-      {locationList.forEach(location => {
+      {locationList.map(location => {
         return <LocationCard key={location.id} {...location} />;
       })}
     </section>
